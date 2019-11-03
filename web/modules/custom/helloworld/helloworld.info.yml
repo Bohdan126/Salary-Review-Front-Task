@@ -1,0 +1,6 @@
+name: Hello World
+description: 'My custom Autocomplete Form!'
+type: module
+core: 8.x
+version: 1.0
+package: custom

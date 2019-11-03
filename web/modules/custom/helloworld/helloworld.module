@@ -1,0 +1,13 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function helloworld_form_views_exposed_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+
+  //додати перевірку на в'юшку і філд field_full_name_1 щоб не ерорив
+  $form["field_full_name_1"]["#autocomplete_route_name"] = 'helloworld.custom_autocomplete';
+
+}
