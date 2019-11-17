@@ -1,0 +1,9 @@
+uuid: f1537638-07fe-4890-8207-68d09f64b695
+langcode: en
+status: true
+dependencies: {  }
+name: Vocabulary
+vid: vocabulary
+description: ''
+hierarchy: 0
+weight: 0

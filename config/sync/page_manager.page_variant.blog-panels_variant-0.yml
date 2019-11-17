@@ -1,0 +1,65 @@
+uuid: 0d150e53-8316-434d-8911-574f798ee763
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.blog
+    - views.view.articles_block_slider
+    - views.view.basic_page_block_slider
+    - views.view.taxonomy_block
+  module:
+    - panels
+    - views
+id: blog-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    e759c1cc-0d6c-467d-be7a-798b209d9fd2:
+      id: 'views_block:articles_block_slider-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: content
+      weight: -1
+      uuid: e759c1cc-0d6c-467d-be7a-798b209d9fd2
+      context_mapping: {  }
+    6ec4563f-972b-48dd-97eb-e16ca6185856:
+      id: 'views_block:taxonomy_block-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: content
+      weight: 0
+      uuid: 6ec4563f-972b-48dd-97eb-e16ca6185856
+      context_mapping: {  }
+    84d17ba0-b6cc-476b-91ac-c67ac51d2917:
+      id: 'views_block:basic_page_block_slider-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: content
+      weight: 1
+      uuid: 84d17ba0-b6cc-476b-91ac-c67ac51d2917
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 005fca27-1094-4eab-91de-c1063633be89
+  label: null
+  weight: 0
+  layout: layout_onecol
+  layout_settings: {  }
+  page_title: ''
+  storage_type: page_manager
+  storage_id: blog-panels_variant-0
+  builder: standard
+page: blog
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

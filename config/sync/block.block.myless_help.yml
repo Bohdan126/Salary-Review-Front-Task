@@ -1,0 +1,22 @@
+uuid: 29e87d56-6da9-4eeb-9c26-c10530e513a8
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - myless
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: myless_help
+theme: myless
+region: content
+weight: -5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

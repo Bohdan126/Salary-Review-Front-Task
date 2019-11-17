@@ -1,0 +1,22 @@
+uuid: b398090f-b701-43b6-b467-05b103d1af69
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - myless
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: myless_content
+theme: myless
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

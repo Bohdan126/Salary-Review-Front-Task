@@ -1,0 +1,22 @@
+uuid: 14d241a4-feb3-4014-a632-bf09f768a533
+langcode: en
+status: true
+dependencies:
+  theme:
+    - myless
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: myless_local_tasks
+theme: myless
+region: content
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,26 @@
+uuid: 4f43fb98-e4b9-42f4-bd5b-ba856d3cc269
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.vocabulary.field_image
+    - taxonomy.vocabulary.vocabulary
+  module:
+    - image
+id: taxonomy_term.vocabulary.default
+targetEntityType: taxonomy_term
+bundle: vocabulary
+mode: default
+content:
+  field_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  description: true
+  langcode: true

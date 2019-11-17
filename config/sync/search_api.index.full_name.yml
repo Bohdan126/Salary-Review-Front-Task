@@ -1,0 +1,88 @@
+uuid: 1d752aff-f038-4e87-a334-a2c89da4990b
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_solr
+    - user
+    - search_api
+    - user_custom_field
+  config:
+    - field.storage.user.field_full_name
+    - search_api.server.default_solr_server
+third_party_settings:
+  search_api_solr:
+    finalize: false
+    commit_before_finalize: false
+    commit_after_finalize: false
+    highlighter:
+      maxAnalyzedChars: 51200
+      fragmenter: gap
+      regex:
+        slop: 0.5
+        pattern: blank
+        maxAnalyzedChars: 10000
+      usePhraseHighlighter: true
+      highlightMultiTerm: true
+      preserveMulti: false
+      highlight:
+        mergeContiguous: false
+        requireFieldMatch: false
+        snippets: 3
+        fragsize: 0
+    advanced:
+      index_prefix: ''
+id: full_name
+name: 'Full Name'
+description: ''
+read_only: false
+field_settings:
+  changed:
+    label: Changed
+    datasource_id: 'entity:user'
+    property_path: changed
+    type: date
+    dependencies:
+      module:
+        - user
+  created:
+    label: Created
+    datasource_id: 'entity:user'
+    property_path: created
+    type: date
+    dependencies:
+      module:
+        - user
+  field_full_name_1:
+    label: 'Full name'
+    datasource_id: 'entity:user'
+    property_path: field_full_name
+    type: text
+    dependencies:
+      config:
+        - field.storage.user.field_full_name
+  mycustom_field:
+    label: 'Custom Field'
+    property_path: mycustom_field
+    type: string
+datasource_settings:
+  'entity:user':
+    languages:
+      default: false
+      selected:
+        - en
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  mycustom_field: {  }
+  rendered_item: {  }
+  solr_date_range:
+    weights:
+      preprocess_index: 0
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: default_solr_server

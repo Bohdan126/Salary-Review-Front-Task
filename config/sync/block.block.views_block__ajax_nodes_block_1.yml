@@ -1,0 +1,30 @@
+uuid: e0124889-42da-4f6d-8a53-b53929db55f4
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.ajax_nodes
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__ajax_nodes_block_1
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:ajax_nodes-block_1'
+settings:
+  id: 'views_block:ajax_nodes-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /ajax-nodes
+    negate: false
+    context_mapping: {  }

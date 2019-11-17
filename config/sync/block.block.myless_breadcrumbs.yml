@@ -1,0 +1,22 @@
+uuid: 7294f7ec-5f39-4603-9681-980eb1b4b19c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - myless
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: myless_breadcrumbs
+theme: myless
+region: navigation
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }
