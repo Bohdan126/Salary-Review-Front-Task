@@ -1,0 +1,23 @@
+uuid: 07266b92-15a5-4ecc-af95-6c1a06b7751b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.search_block
+  module:
+    - views
+  theme:
+    - myless
+id: exposedformsearch_blockpage_1
+theme: myless
+region: navigation
+weight: -4
+provider: null
+plugin: 'views_exposed_filter_block:search_block-page_1'
+settings:
+  id: 'views_exposed_filter_block:search_block-page_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility: {  }

@@ -1,0 +1,24 @@
+uuid: bab4d22c-7761-4c7c-b4ef-9adbaaa905ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - myless
+id: useraccountmenu
+theme: myless
+region: navigation
+weight: -3
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

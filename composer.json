@@ -72,6 +72,9 @@
         "patches": {
             "drupal/search_api_solr": {
                 "Removes solr.install.dir=../../.. from solrcore.properties": "https://www.drupal.org/files/issues/2018-12-01/3015993-6-solr_install_dir_remove.patch"
+            },
+            "drupal/better_exposed_filters": {
+                "Undefined index: value in BetterExposedFilters->buildOptionsForm()": "https://www.drupal.org/files/issues/2018-12-05/better_exposed_filters_fix_undefined_value-3012046-5.patch"
             }
         },
         "composer-exit-on-patch-failure": true,
